@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 6007",
-    "postinstall": "rm -rf ./packages/**/node_modules && lerna bootstrap"
+    "postinstall": "rm -rf ./packages/**/node_modules"
   },
   "dependencies": {
     "modernizr": "^3.5.0",
+    "moment": "^2.24.0",
     "react": "^16.7.0"
   },
   "devDependencies": {
@@ -19,7 +20,6 @@
     "@babel/register": "^7.0.0",
     "@storybook/react": "4.1.11",
     "babel-loader": "8.0.4",
-    "lerna": "^3.4.3",
     "webpack": "^4.28.4"
   },
   "engines": {
