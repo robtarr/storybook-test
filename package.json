@@ -1,0 +1,32 @@
+{
+  "name": "storybook-test",
+  "version": "0.1.0",
+  "description": "testing SB 4.1.11 with Lerna",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook -p 6007",
+    "postinstall": "rm -rf ./packages/**/node_modules && lerna bootstrap"
+  },
+  "dependencies": {
+    "modernizr": "^3.5.0",
+    "react": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.3.1",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "^7.0.0",
+    "@storybook/react": "4.1.11",
+    "babel-loader": "8.0.4",
+    "lerna": "^3.4.3",
+    "webpack": "^4.28.4"
+  },
+  "engines": {
+    "node": ">= 8.3.0",
+    "npm": ">= 6.5.0"
+  },
+  "eslintIgnore": [
+    "tasks/**"
+  ]
+}
